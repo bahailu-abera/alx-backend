@@ -26,7 +26,6 @@ class LIFOCache(BaseCaching):
 
         self.cache_data[key] = item
 
-
         if len(self.cache_data) > BaseCaching.MAX_ITEMS:
             print("DISCARD: {}".format(self.lifo[-1]))
             del self.cache_data[self.lifo[-1]]
