@@ -5,6 +5,7 @@ LIFOCache module
 from collections import deque
 BaseCaching = __import__('base_caching').BaseCaching
 
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -84,7 +85,6 @@ class List:
             next.prev = prev
         else:
             self.tail = prev
-
 
 
 class LRUCache(BaseCaching):
