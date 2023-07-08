@@ -61,24 +61,30 @@ class List:
         if self.head is None:
             return
 
-        self.head = self.head.next
+        next = self.head.next
 
-        if self.head is not None:
-            self.head.prev = None
+        if next is not None:
+            next.prev = None
+        else:
+            self.tail = None
+
+        self.head = next
 
     def pop_back(self):
         """
         Remove data from the back of the list
         """
         if self.tail is None:
-            return
+            return None
 
         prev = self.tail.prev
 
-        self.tail = prev
+        if prev is not None:
+            prev.next = None
+        else:
+            self.head = None
 
-        if self.tail is not None:
-            self.tail.next = None
+        self.tail = prev
 
     def front(self):
         """
