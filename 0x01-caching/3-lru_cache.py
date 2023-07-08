@@ -7,6 +7,9 @@ BaseCaching = __import__('base_caching').BaseCaching
 
 
 class Node:
+    """
+    Node Class
+    """
     def __init__(self, data):
         self.data = data
         self.prev = None
@@ -14,11 +17,17 @@ class Node:
 
 
 class List:
+    """
+    Doubly Linked list
+    """
     def __init__(self):
         self.head = None
         self.tail = None
 
     def insert_front(self, value):
+        """
+        Insert data in the front of the list
+        """
         new_node = Node(value)
         new_node.next = self.head
 
@@ -31,6 +40,9 @@ class List:
         self.head = new_node
 
     def insert_end(self, value):
+        """
+        Insert data at the end of the list
+        """
         new_node = Node(value)
         new_node.prev = self.tail
 
@@ -43,6 +55,9 @@ class List:
         self.tail = new_node
 
     def pop_front(self):
+        """
+        Remove data from the front of the list
+        """
         if self.head is None:
             return
 
@@ -52,6 +67,9 @@ class List:
             self.head.prev = None
 
     def pop_back(self):
+        """
+        Remove data from the back of the list
+        """
         if self.tail is None:
             return
 
@@ -63,12 +81,21 @@ class List:
             self.tail.next = None
 
     def front(self):
+        """
+        Return the head of the list
+        """
         return self.head
 
     def back(self):
+        """
+        Return the tail of the list
+        """
         return self.tail
 
     def erase(self, node):
+        """
+        Erase a node from the list
+        """
         if node is None:
             return
 
