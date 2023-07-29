@@ -10,7 +10,7 @@ class Config:
     """
     Babel config
     """
-    LANGUAGES = ["en", "fr"]
+    LANGUAGES = ["en", "fr", "am"]
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
@@ -33,8 +33,7 @@ def hello_world():
     """
     Render hello world html page.
     """
-    greeting = "Hello, World!"
-    return render_template('2-index.html', greeting=greeting)
+    return render_template('3-index.html')
 
 
 if __name__ == "__main__":
