@@ -3,7 +3,7 @@
 0-app
 """
 from flask import Flask, render_template, request
-from flask_babel import Babel, gettext
+from flask_babel import Babel
 
 
 class Config:
@@ -34,7 +34,7 @@ def hello_world():
     Render hello world html page.
     """
     greeting = "Hello, World!"
-    return render_template('2-index.html', greeting=greeting, gettext=gettext)
+    return render_template('2-index.html', greeting=greeting)
 
 
 if __name__ == "__main__":
