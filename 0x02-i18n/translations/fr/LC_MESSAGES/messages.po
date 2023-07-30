@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-29 19:11+0300\n"
-"PO-Revision-Date: 2023-07-29 19:12+0300\n"
+"POT-Creation-Date: 2023-07-30 16:04+0300\n"
+"PO-Revision-Date: 2023-07-30 16:06+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -37,3 +37,7 @@ msgstr "Vous êtes connecté en tant que %(username)s."
 #: templates/5-index.html:11
 msgid "not_logged_in"
 msgstr "Vous n'êtes pas connecté."
+
+#: templates/index.html:14
+msgid "current_time_is"
+msgstr "Nous sommes le %(current_time)s."
